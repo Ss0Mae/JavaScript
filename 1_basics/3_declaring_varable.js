@@ -5,4 +5,9 @@
  * 3) const
  */
 const name = "ssomae";
-console.log(name,"Hi");
+console.log(name, "Hi");
+
+/**
+ * let 과 vat로 선언하면
+ * 값을 추후에 변경 할 수 있음
+ */
