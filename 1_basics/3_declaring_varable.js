@@ -6,7 +6,7 @@
  */
 const name = "ssomae";
 console.log(name, "Hi");
-
+// const는 항상 값을 할당과 동시에 선언을 해야함
 /**
  * let 과 vat로 선언하면
  * 값을 추후에 변경 할 수 있음
