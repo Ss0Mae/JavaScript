@@ -132,5 +132,12 @@ console.log(numbers.find((x) => x % 2 === 0));
 //findIndex()
 console.log(numbers.findIndex((x) => x % 2 === 0));
 
-//reduce()
+//reduce(a,b) a => 콜백함수 , b => 초기 값
+//초기값 0이 p에 입력이된다
+// numbers 어레이의 첫번째 값인 1이 n에 입력된다
+// p + n 결과값이 반환이된다 1
+// 반환된값 1이 다시 p에 입력이된다
+// 어레이의 두번째 값인 8이 n에 들어간다
+// p+n 에서 9가 반환된다
+// 9가 다시 P 에 입력이된다.... 리스트를 모두 순회할때 까지 반복
 console.log(numbers.reduce((p, n) => p + n, 0));
