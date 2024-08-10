@@ -53,6 +53,7 @@ console.log(iveMembers.concat('ssomae'));
 console.log(iveMembers);
 
 //slice(n, m) n부터 m-1번까지 삭제, 원본배열은 변화가 ㅇ벗다
+console.log('slice Method');
 console.log(iveMembers.slice(0, 3));
 console.log(iveMembers)
 

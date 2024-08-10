@@ -33,6 +33,8 @@ for (let key in array) {
     //console.log(key);
     console.log(`${key}:${array[key]}`);
 }
+
+
 //for ...of -> value값의 접근
 for (let value of array) {
     console.log(value);
