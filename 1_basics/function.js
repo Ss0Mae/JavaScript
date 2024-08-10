@@ -20,3 +20,8 @@ foo(bar);
  * 2. 나머지 매개변수 Rest parameter
  * 3. arguments 객체
  */
+
+function foo1(arg, ...rest) {
+    console.log(rest);
+}
+foo1(1, 2, 3, 4); // 2, 3, 4 console log
