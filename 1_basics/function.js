@@ -25,3 +25,27 @@ function foo1(arg, ...rest) {
     console.log(rest);
 }
 foo1(1, 2, 3, 4); // 2, 3, 4 console log
+
+/**
+ * 1. 함수 선언문
+ * 2. 함수 표현식
+ * 3. Function 생성자 함수
+ * 4. 화살표 함수 표현식
+ */
+function foo2() {
+    console.log('foo2');
+}
+foo2();
+
+const foo3 = function () {
+    console.log('foo3');
+}
+foo3();
+
+const foo4 = new Function("console.log('foo4')");
+foo4();
+
+const foo5 = () => {
+    console.log('foo5')
+}
+foo5();
