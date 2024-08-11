@@ -49,3 +49,29 @@ const foo5 = () => {
     console.log('foo5')
 }
 foo5();
+
+/**
+ * 1. IIFE (즉시 실행함수)
+ * 2. 재귀함수
+ * 3. 중첩함수
+ * 4. 콜백함수
+ */
+
+(function foo6() {
+    console.log('foo6');
+})();
+
+function foo7(arg) {
+    if (arg === 3) return;
+    console.log(arg);
+    foo7(arg+1);
+}
+foo7(0)
+
+function foo8(arg) {
+    function bar() {
+        console.log(arg);
+    }
+    bar();
+}
+foo8(1);
