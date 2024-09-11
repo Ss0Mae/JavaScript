@@ -5,7 +5,7 @@ function Circle(radius) {
 
     this.radius = radius;
     this.getDiameter = function () {
-        return 2 * this.radius;
+        return 2* 2 * this.radius;
     }
 }
 
