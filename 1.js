@@ -1,8 +1,7 @@
-var x = '1';
-console.log(+x);
-console.log(x);
+const obj = {};
+const parent = { x: 1 };
 
-x = true;
-console.log(+x); // 1
-y = true;
-console.log(y); // true
+obj.__proto__;
+obj.__proto__ = parent;
+
+console.log(obj.x);
