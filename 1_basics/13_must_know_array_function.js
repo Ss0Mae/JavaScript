@@ -109,6 +109,7 @@ console.log(numbers);
 numbers.sort((a, b) => a > b ? -1 : 1);
 console.log(numbers);
 
+console.log('Map Start');
 // map() 함수가 리턴하는 값으로 배열의 값을 대체 원본 배열은 변화가 없다.
 console.log(iveMembers.map((x) => x));
 console.log(iveMembers.map((x) => `아이브: ${x}`));
@@ -121,7 +122,7 @@ console.log(iveMembers.map((x) => {
         return x;
     }
 }))
-
+console.log('Map end');
 //filter() 해당되는 모든값들을 새로운 객체로 리턴
 numbers = [1, 8, 7, 3, 6];
 

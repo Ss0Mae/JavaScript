@@ -21,15 +21,15 @@ class SQL{
             }
 
             const [results] = await this.db.query(query, values);
-
+            
             if (results.affectedRows > 0) {
-                return { success: true, message: `${results.affectedRows} record deleted successfully` };
+                return { success: true };
             } else {
-                return { success: false, message: `No record found` };
+                return { success: false};
             }
         } catch (error) {
             console.error('Error Detecting!', error);
-            return { success: false, message: `Error Detecting`, error : error.message };
+            return { success: false};
         }
     }
 }
