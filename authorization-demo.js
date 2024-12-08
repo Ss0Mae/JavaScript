@@ -17,6 +17,6 @@ app.get('/jwt', (req, res) => {
 //GET 
 app.get('/jwt/decoded', (req, res) => {
     let receivedJWT = req.headers["authorization"];
-    let decoded = jwt.verify(receivedJWT, process.env.PRIVATE_KEY);
+    let decoded = jwt.verify(receivedJWT, process.env.PRIVATE_KEY)
     res.send(decoded);
 })
