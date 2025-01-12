@@ -7,6 +7,7 @@ class SQL{
     async delete(conditions) {
         try {
             let query, values;
+            console.log(query, values);
 
             if (Array.isArray(conditions)) {
                 query = `DELETE FROM ${this.table} WHERE id IN (${conditions.map(() => '?').join(', ')})`;
