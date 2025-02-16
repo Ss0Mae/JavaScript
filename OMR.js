@@ -29,7 +29,7 @@ class SQL{
                 return { success: false};
             }
         } catch (error) {
-            console.error('Error Detecting!', error);
+            console.error('Error Detecting!!! Check Error', error);
             return { success: false};
         }
     }
