@@ -11,7 +11,7 @@ app.get('/jwt', (req, res) => {
     res.cookie("jwt", token, {
         httpOnly: true
     });
-    res.send('토큰@');
+    res.send('토큰');
 })
 
 //GET 
