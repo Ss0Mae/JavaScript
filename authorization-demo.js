@@ -12,6 +12,7 @@ app.get('/jwt', (req, res) => {
         httpOnly: true
     });
     res.send('토큰');
+    console.log(token);
 })
 
 //GET 
